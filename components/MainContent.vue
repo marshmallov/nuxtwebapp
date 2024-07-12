@@ -20,10 +20,10 @@
     >
       <div class="parallax-content">
         <div class="content-card">
-          <h2>Post Title 2</h2>
+          <!-- <h2>Post Title 2</h2> -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. -->
           </p>
         </div>
       </div>
@@ -34,10 +34,10 @@
     >
       <div class="parallax-content">
         <div class="content-card">
-          <h2>Post Title 3</h2>
+          <!-- <h2>Post Title 3</h2> -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. -->
           </p>
         </div>
       </div>
@@ -48,7 +48,7 @@
     >
       <div class="parallax-content">
         <div class="content-card">
-          <h1>O'Vonel</h1>
+          <!-- <h1>O'Vonel</h1> -->
           <p>
             <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. -->
