@@ -6,11 +6,14 @@
     >
       <div class="parallax-content">
         <div class="content-card">
-          <h1>O'Vonel</h1>
+          <section>
+            <h1>O'Vonel</h1>
           <p>
             <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. -->
           </p>
+          </section>
+
         </div>
       </div>
     </div>
@@ -20,11 +23,14 @@
     >
       <div class="parallax-content">
         <div class="content-card">
+          <section id="about-section">
           <!-- <h2>Post Title 2</h2> -->
           <p>
             <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. -->
           </p>
+          </section>
+
         </div>
       </div>
     </div>
@@ -34,11 +40,13 @@
     >
       <div class="parallax-content">
         <div class="content-card">
+          <section>
           <!-- <h2>Post Title 3</h2> -->
           <p>
             <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. -->
           </p>
+          </section>
         </div>
       </div>
     </div>
@@ -48,11 +56,13 @@
     >
       <div class="parallax-content">
         <div class="content-card">
-          <!-- <h1>O'Vonel</h1> -->
+          <section id="contact-section">
+          <!-- <h2>Post Title 4</h2> -->
           <p>
             <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. -->
           </p>
+          </section>
         </div>
       </div>
     </div>
