@@ -1,4 +1,11 @@
 export default {
+  target: 'static', // default is 'server', set to 'static' for static site generation
+  router: {
+    base: '/<nuxtwebapp>/', // replace <repository-name> with your GitHub repository name
+  },
+  generate: {
+    dir: 'dist' // output directory for the generated static site
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxtwebapp',
