@@ -1,83 +1,81 @@
 <template>
   <div class="parallax-container">
-    <div
-      class="parallax-item"
-      style="background-image: url('/images/IMG_1.jpg')"
-    >
-      <div class="parallax-content">
-        <div class="content-card">
-          <section>
+    <section id="home-section">
+      <div
+        class="parallax-item"
+        style="background-image: url('/images/IMG_1.jpg')"
+      >
+        <div class="parallax-content">
+          <div class="content-card">
             <h1>O'Vonel</h1>
-          <p>
-            <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            <p>
+              <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. -->
-          </p>
-          </section>
-
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      class="parallax-item"
-      style="background-image: url('/images/IMG_2.jpg')"
-    >
-      <div class="parallax-content">
-        <div class="content-card">
-          <section id="about-section">
-          <!-- <h2>Post Title 2</h2> -->
-          <p>
-            <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+    </section>
+    <section id="about-section">
+      <div
+        class="parallax-item"
+        style="background-image: url('/images/IMG_2.jpg')"
+      >
+        <div class="parallax-content">
+          <div class="content-card">
+            <!-- <h2>Post Title 2</h2> -->
+            <p>
+              <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. -->
-          </p>
-          </section>
-
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      class="parallax-item"
-      style="background-image: url('/images/IMG_3.jpg')"
-    >
-      <div class="parallax-content">
-        <div class="content-card">
-          <section>
-          <!-- <h2>Post Title 3</h2> -->
-          <p>
-            <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+    </section>
+    <section id="services-section">
+      <div
+        class="parallax-item"
+        style="background-image: url('/images/IMG_3.jpg')"
+      >
+        <div class="parallax-content">
+          <div class="content-card">
+            <!-- <h2>Post Title 3</h2> -->
+            <p>
+              <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. -->
-          </p>
-          </section>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      class="parallax-item"
-      style="background-image: url('/images/IMG_4.jpg')"
-    >
-      <div class="parallax-content">
-        <div class="content-card">
-          <section id="contact-section">
-          <!-- <h2>Post Title 4</h2> -->
-          <p>
-            <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+    </section>
+    <section id="contact-section">
+      <div
+        class="parallax-item"
+        style="background-image: url('/images/IMG_4.jpg')"
+      >
+        <div class="parallax-content">
+          <div class="content-card">
+            <!-- <h2>Post Title 4</h2> -->
+            <p>
+              <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. -->
-          </p>
-          </section>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'About'
-}
+  name: "About",
+};
 </script>
 
 <style scoped>
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   overflow-x: hidden;
@@ -110,7 +108,12 @@ html, body {
 }
 
 .content-card {
-  background-color: rgba(255, 255, 255, 0); /* Transparency for the content card */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0
+  ); /* Transparency for the content card */
   padding: 2rem;
   border-radius: 8px;
   /* box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); */

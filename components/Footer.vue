@@ -1,6 +1,6 @@
 <template>
     <footer>
-      <p>&copy; 2024 Your Name. All rights reserved.</p>
+      <p>&copy; 2024 O'Vonel. All rights reserved.</p>
     </footer>
   </template>
   
@@ -12,7 +12,7 @@
   
   <style scoped>
   footer {
-    background-color: #333;
+    background-color: #000000;
     color: white;
     text-align: center;
     padding: 1rem;
