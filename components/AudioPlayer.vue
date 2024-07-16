@@ -1,12 +1,11 @@
 <template>
   <div class="">
     <div class="flex justify-between items-center ">
-      <div>
-        <h3 class=" text-white font-medium">
-          {{ currentTrack.name }}
-        </h3>
-        <p class="text-white mt-1">{{ currentTrack.artist }}</p>
+      <div class="track-info overflow-hidden relative">
+      <div class="marquee text-white whitespace-nowrap overflow-hidden relative">
+        {{ currentTrack.name }} - {{ currentTrack.artist }}
       </div>
+    </div>
 
       <div class="text-white" @click="prevTrack">
         <svg
@@ -26,7 +25,7 @@
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
         >
-          <path d="M4 20V2l16 9-16 9z" />
+          <path d="M 5 16 V 4 l 11 6 l -11 6 z" />
         </svg>
         <svg
           v-else
@@ -48,11 +47,10 @@
           <path d="M4 4l8 6-8 6V4zm10 0h2v12h-2z" />
         </svg>
       </div>
-    </div>
-
-    <div class="mx-8">
+      <div class="mx-8">
       <div class="flex justify-between text-sm text-white">
         <p>{{ formatTime(currentTime) }}</p>
+        /
         <p>{{ formatTime(duration) }}</p>
       </div>
       <div class="mt-1">
@@ -64,6 +62,9 @@
         </div>
       </div>
     </div>
+    </div>
+
+
 
     <audio ref="audio" @timeupdate="updateTime"></audio>
   </div>
@@ -182,5 +183,22 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.track-info {
+  width: 100px; /* Adjust the width as needed */
+}
+
+.marquee {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 </style>
