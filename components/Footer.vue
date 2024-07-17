@@ -1,6 +1,6 @@
 <template>
     <footer>
-      <p>&copy; 2024 O'Vonel. All rights reserved.</p>
+      <p>&copy; 2020 O'Vonel. All rights reserved.</p>
     </footer>
   </template>
   

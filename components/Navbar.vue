@@ -1,39 +1,26 @@
 <template>
-  <nav>
-    <ul>
-      <li>
-        <a href="#home-section" @click.prevent="scrollToSection('home-section')"
-          >Home</a
-        >
-      </li>
-      <li>
-        <a
-          href="#about-section"
-          @click.prevent="scrollToSection('about-section')"
-          >About</a
-        >
-      </li>
-      <li>
-        <a
-          href="#services-section"
-          @click.prevent="scrollToSection('services-section')"
-          >Services</a
-        >
-      </li>
-      <li>
-        <a
-          href="#contact-section"
-          @click.prevent="scrollToSection('contact-section')"
-          >Contact</a
-        >
-      </li>
-      <li>
-        <!-- <audio-player></audio-player> -->
-      </li>
-      <li>
-        <AudioPlayer></AudioPlayer>
-      </li>
-    </ul>
+  <nav class="">
+    <div class=" ">
+      <div class="flex flex-col md:flex-row justify-between ">
+        <ul class="">
+          <li>
+            <a href="#home-section" @click.prevent="scrollToSection('home-section')" class="text-white">Home</a>
+          </li>
+          <li>
+            <a href="#about-section" @click.prevent="scrollToSection('about-section')" class="text-white">About</a>
+          </li>
+          <li>
+            <a href="#services-section" @click.prevent="scrollToSection('services-section')" class="text-white">Services</a>
+          </li>
+          <li>
+            <a href="#contact-section" @click.prevent="scrollToSection('contact-section')" class="text-white">Contact</a>
+          </li>
+        </ul>
+        <div class="  ">
+          <AudioPlayer></AudioPlayer>
+        </div>
+      </div>
+    </div>
   </nav>
 </template>
 

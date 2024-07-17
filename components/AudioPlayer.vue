@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="flex justify-between items-center ">
+    <div class="flex  items-center ">
       <div class="track-info overflow-hidden relative">
       <div class="marquee text-white whitespace-nowrap overflow-hidden relative">
         {{ currentTrack.name }} - {{ currentTrack.artist }}
@@ -185,7 +185,7 @@ body {
   flex-direction: column;
 }
 .track-info {
-  width: 100px; /* Adjust the width as needed */
+  width: 150px; /* Adjust the width as needed */
 }
 
 .marquee {
