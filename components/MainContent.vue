@@ -7,7 +7,7 @@
       >
         <div class="parallax-content">
           <div class="content-card">
-            <h1>O'Vonel</h1>
+            <h1>Ovonel</h1>
             <p>
               <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. -->
@@ -25,8 +25,7 @@
           <div class="content-card">
             <!-- <h2>Post Title 2</h2> -->
             <p>
-              <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. -->
+              Ovonel is a dynamic and rapidly growing technology company specializing in innovative software solutions and IT services.
             </p>
           </div>
         </div>

@@ -1,11 +1,13 @@
 <template>
   <div class="">
-    <div class="flex  items-center ">
+    <div class="flex items-center">
       <div class="track-info overflow-hidden relative">
-      <div class="marquee text-white whitespace-nowrap overflow-hidden relative">
-        {{ currentTrack.name }} - {{ currentTrack.artist }}
+        <div
+          class="marquee text-white whitespace-nowrap overflow-hidden relative"
+        >
+          {{ currentTrack.name }} - {{ currentTrack.artist }}
+        </div>
       </div>
-    </div>
 
       <div class="text-white" @click="prevTrack">
         <svg
@@ -48,23 +50,21 @@
         </svg>
       </div>
       <div class="mx-8">
-      <div class="flex justify-between text-sm text-white">
-        <p>{{ formatTime(currentTime) }}</p>
-        /
-        <p>{{ formatTime(duration) }}</p>
-      </div>
-      <div class="mt-1">
-        <div class="bg-grey-dark rounded-full">
-          <div
-            :style="{ width: progress + '%' }"
-            class="bg-red-light rounded-full relative"
-          ></div>
+        <div class="flex justify-between text-sm text-white">
+          <p>{{ formatTime(currentTime) }}</p>
+          /
+          <p>{{ formatTime(duration) }}</p>
+        </div>
+        <div class="mt-1">
+          <div class="bg-grey-dark rounded-full">
+            <div
+              :style="{ width: progress + '%' }"
+              class="bg-red-light rounded-full relative"
+            ></div>
+          </div>
         </div>
       </div>
     </div>
-    </div>
-
-
 
     <audio ref="audio" @timeupdate="updateTime"></audio>
   </div>
@@ -86,11 +86,10 @@ export default {
           path: "/audios/Scarface - Push it to the limit.mp3",
         },
         {
-          name: "I'm Still Standing",
-          artist: "Elton John",
-          path: "/audios/Elton John - Im Still Standing.mp3",
+          name: "Another way",
+          artist: "Gigi D'Agostino",
+          path: "/audios/Gigi D'Agostino - Another way.mp3",
         },
- 
       ],
       currentIndex: 0,
       isPlaying: false,
@@ -164,7 +163,6 @@ export default {
     // this.isPlaying = true;
     this.$refs.audio.play();
     this.playpauseTrack();
-   
   },
 };
 </script>
