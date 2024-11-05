@@ -3,7 +3,7 @@
     <section id="home-section">
       <div
         class="parallax-item"
-        style="background-image: url('/IMG_1.jpg')"
+        style="background-image: url('/images/IMG_1.jpg')"
       >
         <div class="parallax-content">
           <div class="content-card">
