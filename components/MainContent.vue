@@ -3,7 +3,7 @@
     <section id="home-section">
       <div
         class="parallax-item"
-        style="background-image: url('~/images/IMG_1.jpg')"
+        style="background-image: url('/images/IMG_1.jpg')"
       >
         <div class="parallax-content">
           <div class="content-card">
@@ -19,7 +19,7 @@
     <section id="about-section">
       <div
         class="parallax-item"
-        style="background-image: url('~/images/IMG_2.jpg')"
+        style="background-image: url('/images/IMG_2.jpg')"
       >
         <div class="parallax-content">
           <div class="content-card">
@@ -35,7 +35,7 @@
     <section id="services-section">
       <div
         class="parallax-item"
-        style="background-image: url('~/images/IMG_3.jpg')"
+        style="background-image: url('/images/IMG_3.jpg')"
       >
         <div class="parallax-content">
           <div class="content-card">
@@ -77,7 +77,7 @@
     <section id="contact-section">
       <div
         class="parallax-item"
-        style="background-image: url('~/images/IMG_4.jpg')"
+        style="background-image: url('/images/IMG_4.jpg')"
       >
         <div class="parallax-content">
           <div class="content-card">
@@ -121,8 +121,8 @@ export default {
       stripe.redirectToCheckout({
         lineItems: [{ price: "price_1QG4ytCcCbod9zFrB2BIgGrx", quantity: 1 }], // Replace with your price ID
         mode: "payment",
-        successUrl: `${window.location.origin}/success?session_id={CHECKOUT_SESSION_ID}`,
-        cancelUrl: `${window.location.origin}/cancel`,
+        successUrl: `${window.location.origin}/`,
+        cancelUrl: `${window.location.origin}/`,
       });
       
     },
