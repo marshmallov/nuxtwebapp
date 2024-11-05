@@ -7,6 +7,7 @@ export default {
     dir: 'dist' // output directory for the generated static site
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
+  
   head: {
     title: 'nuxtwebapp',
     htmlAttrs: {
@@ -28,16 +29,18 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
+  plugins: ['~/plugins/stripe.js'
   ],
-
+  env: {
+    STRIPE_PUBLIC_KEY: process.env.STRIPE_PUBLIC_KEY,
+  },
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
+    '@nuxtjs/tailwindcss','@nuxtjs/dotenv'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -46,5 +49,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+  serverMiddleware: [
+
+  ],
 }

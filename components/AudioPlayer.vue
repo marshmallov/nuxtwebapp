@@ -19,9 +19,9 @@
           <path d="M4 5h3v10H4V5zm12 0v10l-9-5 9-5z" />
         </svg>
       </div>
-      <div class="text-white" @click="playpauseTrack">
+      <div class="text-white" @click="playPauseTrack">
         <svg
-          v-if="!isPlaying"
+          v-if="!State.isPlaying"
           class="w-8"
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
@@ -70,25 +70,33 @@
   </div>
 </template>
 Script Update your script to handle the audio logic: javascript Skopiuj kod
-<script>
+
+
+<script >
+import { State } from '../store';
 export default {
+  setup(){
+    return {
+      State, // Expose the State so you can access isPlaying in your template
+    };
+  },
   data() {
     return {
       songs: [
-        {
-          name: "Happy Nation",
-          artist: "Ace of Base",
-          path: "/audios/Ace of Base - Happy Nation.mp3",
-        },
         {
           name: "Push it to the Limit",
           artist: "Scarface",
           path: "/audios/Scarface - Push it to the limit.mp3",
         },
         {
-          name: "Another way",
-          artist: "Gigi D'Agostino",
-          path: "/audios/Gigi D'Agostino - Another way.mp3",
+          name: "Shadows Of The Night",
+          artist: "Gigi D'Agostino & Boostedkids",
+          path: "/audios/Gigi D'Agostino & Boostedkids - Shadows Of The Night.mp3",
+        },
+        {
+          name: "Happy Nation",
+          artist: "Ace of Base",
+          path: "/audios/Ace of Base - Happy Nation.mp3",
         },
       ],
       currentIndex: 0,
@@ -107,17 +115,18 @@ export default {
     },
   },
   methods: {
-    playpauseTrack() {
-      if (!this.isPlaying) this.playTrack();
+    playPauseTrack() {
+      if (!this.State.isPlaying) this.playTrack();
       else this.pauseTrack();
+      this.$emit('updateIsPlaying', this.isPlaying);
     },
     playTrack() {
       this.$refs.audio.play();
-      this.isPlaying = true;
+      this.State.isPlaying = true;
     },
     pauseTrack() {
       this.$refs.audio.pause();
-      this.isPlaying = false;
+      this.State.isPlaying = false;
     },
     nextTrack() {
       if (this.currentIndex < this.songs.length - 1) {
@@ -162,7 +171,7 @@ export default {
     this.loadTrack();
     // this.isPlaying = true;
     this.$refs.audio.play();
-    this.playpauseTrack();
+    this.playPauseTrack();
   },
 };
 </script>

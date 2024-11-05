@@ -2,7 +2,7 @@
   <nav class="">
     <div class=" ">
       <div class="flex flex-col md:flex-row justify-between ">
-        <ul class="">
+        <ul v-if= "State.isHomePage" class="">
           <li>
             <a href="#home-section" @click.prevent="scrollToSection('home-section')" class="text-white">Home</a>
           </li>
@@ -16,8 +16,13 @@
             <a href="#contact-section" @click.prevent="scrollToSection('contact-section')" class="text-white">Contact</a>
           </li>
         </ul>
+        <ul v-else= "State.isHomePage" class="">
+          <li>
+            <a class="text-white"><NuxtLink to="/">Back to Home</NuxtLink></a>
+          </li>
+        </ul>
         <div class="  ">
-          <AudioPlayer></AudioPlayer>
+          <AudioPlayer ref="AudioPlayer"/>
         </div>
       </div>
     </div>
@@ -25,6 +30,7 @@
 </template>
 
 <script>
+import { State } from '../store';
 import AudioPlayer from './AudioPlayer.vue';
 export default {
   
@@ -32,13 +38,18 @@ export default {
   components: {
     AudioPlayer
   },
+  setup(){
+    return {
+      State, // Expose the State so you can access isPlaying in your template
+    };
+  },
   data() {
     return {
       audio: null,
       audioSources: [
-        "/audios/Ace of Base - Happy Nation.mp3",
-        "/audios/Elton John - Im Still Standing.mp3",
-        "/audios/Scarface - Push it to the limit.mp3",
+        "assets/audios/Ace of Base - Happy Nation.mp3",
+        "assets/audios/Elton John - Im Still Standing.mp3",
+        "assets/audios/Scarface - Push it to the limit.mp3",
       ],
       currentAudioIndex: 0,
     };
@@ -50,6 +61,7 @@ export default {
       const y =
         element.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
+      
     },
   },
   
